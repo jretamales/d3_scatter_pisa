@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="jquery-1.10.2.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="d3.v3.js"></script>
+    <div class="controls">
+        <div id = "slider"></div>
+        <p>Arrival rate: One every <span id="slider-value"></span> seconds</p>
+        <hr>
+        <p>New arrival: <span id="new_arrival"></span></p>
+    </div>
+    <script src="queue_simulation.js"></script>
+</body>
+<style>
+    .controls{
+        border: groove #000;
+        border-width: 2px;
+        padding: 10px;
+        float:right;
+        width:200px;
+        height: 460px
+    }
+</style>
+</html>
