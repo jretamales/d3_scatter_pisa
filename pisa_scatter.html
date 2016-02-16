@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="d3.v3.js"></script>
+    <script src="jquery-1.10.2.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="pisa_scatter.js"></script>
+    <div class = controls>
+        <div id = "mymenu">
+            <select id="myselector">
+                <option value="All">All Countries</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+        <hr class = "separator">
+        <div class = "mysliders">
+            <p>Math</p>
+            <div id="math" class="slider-range"></div>
+            <label for="mathamount">Math Score range:</label>
+            <input type="text" id="mathamount" readonly style="border:0; color:#f6931f;
+            font-weight:bold;">
+        </div>
+        <hr class = "separator">
+        <div class = "mysliders">
+            <p>Reading</p>
+            <div id="reading" class="slider-range"></div>
+            <label for="readingamount">Reading Score range:</label>
+            <input type="text" id="readingamount" readonly style="border:0; color:#f6931f;
+            font-weight:bold;">
+        </div>
+        <hr class = "separator">
+    </div>
+</body>
+<style>
+    .controls{
+        border: groove #000;
+        border-width: 2px;
+        padding: 10px;
+        float:right;
+        width:200px;
+        height: 460px
+    }
+    .separator{
+        width:100%;
+    }
+    #mymenu{
+        padding:1px;
+    }
+    #price{
+        width:100px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    #volume{
+        width:100px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    body {
+        font: 11px sans-serif;
+    }
+    .axis line,
+    .axis text {
+        font: 12px sans-serif;
+    }
+    .axis path {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    .header text{
+        font: 20px sans-serif;
+    }
+    .tooltip {
+        position: absolute;
+        width: 200px;
+        height: 28px;
+        pointer-events: none;
+    }
+    button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+</style>
+</html>
+
